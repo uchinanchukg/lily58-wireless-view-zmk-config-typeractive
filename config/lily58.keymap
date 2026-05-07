@@ -93,11 +93,11 @@
 };
 
 &encoder_left {
-    clockwise = <&kp VOL_UP>;
-    counter-clockwise = <&kp VOL_DOWN>;
+    cw = <&kp VOL_UP>;
+    ccw = <&kp VOL_DOWN>;
 };
 
 &encoder_right {
-    clockwise = <&kp PG_DN>;
-    counter-clockwise = <&kp PG_UP>;
+    cw = <&kp PG_DN>;
+    ccw = <&kp PG_UP>;
 };
