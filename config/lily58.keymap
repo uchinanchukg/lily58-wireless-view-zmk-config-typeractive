@@ -49,7 +49,7 @@
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -69,7 +69,7 @@
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         macro_layer { status = "reserved"; };
@@ -87,17 +87,7 @@
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
-            // sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
-};
-
-&encoder_left {
-    cw = <&kp VOL_UP>;
-    ccw = <&kp VOL_DOWN>;
-};
-
-&encoder_right {
-    cw = <&kp PG_DN>;
-    ccw = <&kp PG_UP>;
 };
