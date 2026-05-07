@@ -1,8 +1,9 @@
 / {
     encoders {
-        compatible = "alps,ec11";
+        compatible = "zmk,encoders";
 
         encoder_right: encoder_right {
+            compatible = "alps,ec11";
             a-gpios = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
             b-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
         };
