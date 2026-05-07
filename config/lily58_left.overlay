@@ -1,0 +1,10 @@
+/ {
+    encoders {
+        compatible = "alps,ec11";
+
+        encoder_left: encoder_left {
+            a-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
+            b-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
