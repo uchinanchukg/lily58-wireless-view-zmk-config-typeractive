@@ -3,8 +3,8 @@
         compatible = "alps,ec11";
 
         encoder_right: encoder_right {
-            a-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-            b-gpios = <&pro_micro 5 GPIO_ACTIVE_HIGH>;
+            a-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>; // F4
+            b-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;  // D4
         };
     };
 };
