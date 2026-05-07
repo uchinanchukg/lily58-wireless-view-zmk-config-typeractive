@@ -29,7 +29,7 @@
                                              &kp LALT     &mo 3             &lt 2 TAB       &lt 1 SPACE     &lt 4 BACKSPACE  &lt 5 ENTER  &lt 6 DELETE       &kp RIGHT_GUI
             >;
 
-            // sensor-bindings = <&inc_dec_kp A C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp A C_VOL_DN>;
         };
 
         nav_layer {
