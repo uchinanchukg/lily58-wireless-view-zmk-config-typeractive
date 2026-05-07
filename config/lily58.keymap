@@ -29,7 +29,7 @@
                                              &kp LALT     &mo 3             &lt 2 TAB       &lt 1 SPACE     &lt 4 BACKSPACE  &lt 5 ENTER  &lt 6 DELETE       &kp RIGHT_GUI
             >;
 
-            sensor-bindings = <&inc_dec_kp A C_VOL_DN>;
+            // sensor-bindings = <&inc_dec_kp A C_VOL_DN>;
         };
 
         nav_layer {
@@ -49,7 +49,7 @@
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -69,7 +69,7 @@
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         macro_layer { status = "reserved"; };
@@ -87,7 +87,17 @@
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            // sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
+};
+
+&encoder_left {
+    clockwise = <&kp VOL_UP>;
+    counter-clockwise = <&kp VOL_DOWN>;
+};
+
+&encoder_right {
+    clockwise = <&kp PG_DN>;
+    counter-clockwise = <&kp PG_UP>;
 };
