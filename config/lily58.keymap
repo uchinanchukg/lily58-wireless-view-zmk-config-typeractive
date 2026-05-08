@@ -22,7 +22,7 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &tog 1  &kp N2  &kp N3    &kp N4  &kp N5                                &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &mt LEFT_GUI D
+&kp ESC    &tog 1  &tog 2  &tog 3    &tog 4  &tog 5                                &tog 6  &tog 7    &none      &none    &none     &mt LEFT_GUI D
 &kp TAB    &kp Q   &kp W   &kp F     &kp P   &kp B                                 &kp J   &kp L     &kp U      &kp Y    &kp SQT   &kp UP
 &kp LSHFT  &kp A   &kp R   &kp S     &kp T   &kp G                                 &kp M   &kp N     &kp E      &kp I    &kp O     &kp RSHFT
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp D   &kp V      &kp C_MUTE     &kp C_MUTE  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp DOWN
