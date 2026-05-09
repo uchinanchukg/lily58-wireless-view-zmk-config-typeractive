@@ -14,7 +14,6 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BEHAVIOR";
-
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
@@ -36,11 +35,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC                         &tog 1       &tog 2      &tog 3                    &tog 4        &tog 5                                      &tog 6       &tog 7        &none                     &none       &none        &kp LEFT_GUI D
-&mt LS(LA(LC(LEFT_GUI))) TILDE  &kp Q        &kp W       &kp F                     &kp P         &kp B                                       &kp J        &kp L         &kp U                     &kp Y       &kp SQT      &kp UP
-&kp LSHFT                       &new_behavior LSHFT A  &new_behavior LALT R  &new_behavior LCTRL S               &new_behavior LSHIFT T  &new_behavior LGUI G                                  &new_behavior RGUI M   &new_behavior RSHIFT N  &new_behavior RCTRL E               &new_behavior RALT I  &new_behavior RSHFT O  &kp RSHFT
-&kp LCTRL                       &kp Z        &kp X       &kp C                     &kp D         &kp V       &kp C_MUTE     &kp C_MUTE       &kp K        &kp H         &kp COMMA                 &kp DOT     &kp FSLH     &kp DOWN
-                                                         &kp LS(LA(LC(LEFT_GUI)))  &mo 3         &lt 2 TAB   &lt 1 SPACE    &lt 4 BACKSPACE  &lt 5 ENTER  &lt 6 DELETE  &kp LS(LA(LC(LEFT_GUI)))
+&kp ESC                         &tog 1                 &tog 2                &tog 3                    &tog 4                  &tog 5                                                &tog 6                &tog 7                  &none                     &none                 &none                  &kp LG(D)
+&mt LS(LA(LC(LEFT_GUI))) TILDE  &kp Q                  &kp W                 &kp F                     &kp P                   &kp B                                                 &kp J                 &kp L                   &kp U                     &kp Y                 &kp SQT                &kp UP
+&kp LSHFT                       &new_behavior LSHFT A  &new_behavior LALT R  &new_behavior LCTRL S     &new_behavior LSHIFT T  &new_behavior LGUI G                                  &new_behavior RGUI M  &new_behavior RSHIFT N  &new_behavior RCTRL E     &new_behavior RALT I  &new_behavior RSHFT O  &kp RSHFT
+&kp LCTRL                       &kp Z                  &kp X                 &kp C                     &kp D                   &kp V                 &kp C_MUTE     &kp C_MUTE       &kp K                 &kp H                   &kp COMMA                 &kp DOT               &kp FSLH               &kp DOWN
+                                                                             &kp LS(LA(LC(LEFT_GUI)))  &mo 3                   &lt 2 TAB             &lt 1 SPACE    &lt 4 BACKSPACE  &lt 5 ENTER           &lt 6 DELETE            &kp LS(LA(LC(LEFT_GUI)))
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
