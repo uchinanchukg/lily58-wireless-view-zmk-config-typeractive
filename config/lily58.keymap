@@ -27,7 +27,7 @@
 &mt LS(LA(LC(LEFT_GUI))) TILDE  &kp Q        &kp W       &kp F                     &kp P         &kp B                                       &kp J        &kp L         &kp U                     &kp Y       &kp SQT      &kp UP
 &kp LSHFT                       &mt LSHFT A  &mt LALT R  &mt LCTRL S               &mt LSHIFT T  &mt LGUI G                                  &mt RGUI M   &mt RSHIFT N  &mt RCTRL E               &mt RALT I  &mt RSHFT O  &kp RSHFT
 &kp LCTRL                       &kp Z        &kp X       &kp C                     &kp D         &kp V       &kp C_MUTE     &kp C_MUTE       &kp K        &kp H         &kp COMMA                 &kp DOT     &kp FSLH     &kp DOWN
-                                                         &kp LS(LA(LC(LEFT_GUI)))  &mo 3         &lt 2 TAB   &lt 1 SPACE    &lt 7 BACKSPACE  &lt 8 ENTER  &lt 4 DELETE  &kp LS(LA(LC(LEFT_GUI)))
+                                                         &kp LS(LA(LC(LEFT_GUI)))  &mo 3         &lt 2 TAB   &lt 1 SPACE    &lt 4 BACKSPACE  &lt 5 ENTER  &lt 6 DELETE  &kp LS(LA(LC(LEFT_GUI)))
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -39,11 +39,11 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_AUTO    &kp C_BRIGHTNESS_AUTO  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans                   &trans                 &trans  &trans  &trans
+&trans     &trans     &trans     &trans     &trans     &trans                                                     &trans      &trans        &trans         &trans       &trans       &trans
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)                                                  &kp LC(Y)   &kp LC(V)     &kp LC(C)      &kp LC(X)    &kp LC(Z)    &kp PAGE_UP
+&kp LSHFT  &kp LSHFT  &kp LALT   &kp LCTRL  &kp LSHFT  &kp LGUI                                                   &kp CAPS    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT    &kp RSHIFT
+&trans     &trans     &trans     &kp BSPC   &kp DEL    &kp RET    &kp C_BRIGHTNESS_AUTO    &kp C_BRIGHTNESS_AUTO  &kp INSERT  &kp LG(HOME)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LG(END)  &kp PAGE_DOWN
+                                 &trans     &trans     &trans     &trans                   &kp BSPC               &kp RET     &kp DEL       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
