@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -22,7 +23,7 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC                         &tog 1       &tog 2      &tog 3                    &tog 7        &tog 8                                      &tog 4       &tog 6        &none                     &none       &none        &mt LEFT_GUI D
+&kp ESC                         &tog 1       &tog 2      &tog 3                    &tog 4        &tog 5                                      &tog 6       &tog 7        &none                     &none       &none        &mt LEFT_GUI D
 &mt LS(LA(LC(LEFT_GUI))) TILDE  &kp Q        &kp W       &kp F                     &kp P         &kp B                                       &kp J        &kp L         &kp U                     &kp Y       &kp SQT      &kp UP
 &kp LSHFT                       &mt LSHFT A  &mt LALT R  &mt LCTRL S               &mt LSHIFT T  &mt LGUI G                                  &mt RGUI M   &mt RSHIFT N  &mt RCTRL E               &mt RALT I  &mt RSHFT O  &kp RSHFT
 &kp LCTRL                       &kp Z        &kp X       &kp C                     &kp D         &kp V       &kp C_MUTE     &kp C_MUTE       &kp K        &kp H         &kp COMMA                 &kp DOT     &kp FSLH     &kp DOWN
@@ -51,11 +52,11 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
 
             label = "Mouse";
