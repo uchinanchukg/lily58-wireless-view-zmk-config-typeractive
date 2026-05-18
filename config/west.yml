@@ -7,10 +7,5 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-
-    # ✅ ADD THIS BLOCK
-    - name: config
-      path: config
-      
   self:
     path: config
